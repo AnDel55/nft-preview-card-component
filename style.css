@@ -1,0 +1,141 @@
+:root {
+    --clr-primary-blue: hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+    --clr-neutral-mainbg: hsl(217, 54%, 11%);
+    --clr-neutral-cardbg: hsl(216, 50%, 16%);
+    --clr-neutral-line: hsl(215, 32%, 27%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    color: var(--clr-primary-blue);
+    background: var(--clr-neutral-mainbg);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    padding: 3rem 2rem;
+    max-width: 425px;
+  }
+
+  .card {
+    display: grid;
+    gap: 1rem;
+    background-color: var(--clr-neutral-cardbg);
+    border-radius: 1rem;
+    padding: 1.6rem;
+  }
+
+  .nft-image {
+    border-radius: .5rem;
+  }
+
+  .nft-image::before {
+    content: " hththhtr";
+    
+  }
+
+  .nft-image::before:hover {
+    background-color: red;
+  }
+
+  .nft-name {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .nft-name:hover {
+    color: var(--clr-primary-cyan);
+    cursor: pointer
+  }
+
+  .nft-description {
+    font-weight: 300;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .flex img {
+    margin-right: .5rem;
+  }
+
+  .price {
+    color: var(--clr-primary-cyan);
+    font-weight: 600;
+  }
+
+  .creator {
+    display: flex;
+    align-items: center;
+  }
+
+  .creator-img {
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  .creator-name {
+    color: var(--clr-neutral-white);
+  }
+
+  .creator-name:hover {
+    color: var(--clr-primary-cyan);
+    cursor: pointer
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--clr-neutral-line);
+  }
